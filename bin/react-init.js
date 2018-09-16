@@ -54,4 +54,15 @@ function main() {
   7. 选择安装【esLint、redux/mobx、immutable、react-router】
   8. new commponent/page
   rimraf:rm -rf
+  chalk    （用于高亮终端打印出来的信息。）
+metalsmith   （静态网站生成器。）
+handlebars  （知名的模板引擎。）
+async  (非常强大的异步处理工具。)
+consolidate  （支持各种模板引擎的渲染。）
+path  （node自带path模块，用于路径的处理。）
+multimatch  （ 可以支持多个条件的匹配。）
+options  （自定义工具-用于获取模板配置。）
+ask  （自定义工具-用于询问开发者。）
+filter  （自定义工具-用于文件过滤。）
+logger  （自定义工具-用于日志打印。）
 */
