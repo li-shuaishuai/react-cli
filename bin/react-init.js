@@ -1,13 +1,6 @@
 #!/usr/bin/env node
 
 const program = require('commander')
-const inquirer = require('inquirer')
-const fs = require('fs')
-const path = require('path')
-const glob = require('glob')
-const chalk = require('chalk')
-const ora = require('ora')
-
 const checkPackageVersion = require('../lib/checkPackageVersion')
 const generateProjectName = require('../lib/generateProjectName')
 const download = require('../lib/download')
@@ -27,17 +20,24 @@ checkPackageVersion(CONFIG.projectName, () => {
   main()
 })
 
+const generator = require('../lib/generateTemplate')
 
 function main() {
+  // 生成项目根目录
   generateProjectName(projectName)
     .then(projectInfo => {
       // 下载模板
-      return download(projectInfo.projectName).then((res) => {
+      return download(projectInfo.name).then(res => {
         return { ...projectInfo, ...res }
       })
-    }).then(info => {
-      // 拷贝文件 - 渲染模板 输出
-      console.log(info)
+    }).then(data => {
+      // 渲染模板 输出
+      return generator(data).then(res => {
+        console.log(res)
+      })
+    })
+    .catch(err => {
+      console.log(err)
     })
 }
 
@@ -54,15 +54,8 @@ function main() {
   7. 选择安装【esLint、redux/mobx、immutable、react-router】
   8. new commponent/page
   rimraf:rm -rf
-  chalk    （用于高亮终端打印出来的信息。）
-metalsmith   （静态网站生成器。）
-handlebars  （知名的模板引擎。）
-async  (非常强大的异步处理工具。)
-consolidate  （支持各种模板引擎的渲染。）
-path  （node自带path模块，用于路径的处理。）
-multimatch  （ 可以支持多个条件的匹配。）
-options  （自定义工具-用于获取模板配置。）
-ask  （自定义工具-用于询问开发者。）
-filter  （自定义工具-用于文件过滤。）
-logger  （自定义工具-用于日志打印。）
+
+  ejs
+  globby
+
 */
