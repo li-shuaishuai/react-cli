@@ -37,6 +37,7 @@ function main() {
         return data
       })
     }).then((data) => {
+      // 安装依赖
       return installDeps(data.projectRoot).then(() => {
         return data
       })

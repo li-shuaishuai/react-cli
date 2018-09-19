@@ -4,7 +4,7 @@
   "description": "Command line interface for rapid React.js development",
   "main": "index.js",
   "bin": {
-    "react": "bin/react"
+    "react": "bin/react.js"
   },
   "directories": {
     "doc": "docs",
