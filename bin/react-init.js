@@ -4,7 +4,8 @@ const program = require('commander')
 const checkPackageVersion = require('../lib/checkPackageVersion')
 const generateProjectName = require('../lib/generateProjectName')
 const download = require('../lib/download')
-const { CONFIG } = require('../config')
+const packageName = require('../package.json').name
+
 
 
 
@@ -16,12 +17,13 @@ if (!projectName) {
   return
 }
 
-checkPackageVersion(CONFIG.projectName, () => {
+checkPackageVersion(packageName, () => {
   main()
 })
 
 const generator = require('../lib/generateTemplate')
 const installDeps = require('../lib/installDeps')
+const welcome = require('../lib/welcome')
 
 function main() {
   // 生成项目根目录
@@ -42,7 +44,11 @@ function main() {
         return data
       })
     }).then((data) => {
-      console.log(data)
+      // console.log(data)
+      return data
+    }).then((data) => {
+      // 输出引导信息
+      welcome(data.projectRoot)
     })
     .catch(err => {
       console.log(err)
@@ -58,7 +64,7 @@ function main() {
   //3. 下载模板文件
   //4. 拷贝文件 =正在构建项目  metalsmith handlebars
   //5. 安装依赖
-  6. 输出欢迎语、引导语、模板更新日志
-  7. 选择安装【esLint、redux/mobx、immutable、react-router】
+  //6. 输出欢迎语、引导语、模板更新日志
+  7. 选择安装【esLint、redux/mobx、react-router】
   8. new commponent/page
 */
