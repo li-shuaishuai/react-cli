@@ -17,9 +17,9 @@ if (!projectName) {
   return
 }
 
-// checkPackageVersion(packageName, () => {
-main()
-// })
+checkPackageVersion(packageName, () => {
+  main()
+})
 
 const generator = require('../lib/generateTemplate')
 const installDeps = require('../lib/installDeps')
