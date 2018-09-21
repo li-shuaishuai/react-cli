@@ -17,21 +17,30 @@ if (!projectName) {
   return
 }
 
-checkPackageVersion(packageName, () => {
-  main()
-})
+// checkPackageVersion(packageName, () => {
+main()
+// })
 
 const generator = require('../lib/generateTemplate')
 const installDeps = require('../lib/installDeps')
 const welcome = require('../lib/welcome')
+const ask = require('../lib/ask')
 
 function main() {
   // 生成项目根目录
   generateProjectName(projectName)
-    .then(projectInfo => {
+    .then(data => {
+      // 询问集成库
+      return ask().then(res => {
+        return {
+          ...data,
+          ...res
+        }
+      })
+    }).then(projectInfo => {
       // 下载模板
-      return download(projectInfo.name).then(res => {
-        return { ...projectInfo, ...res }
+      return download(projectInfo.name).then(data => {
+        return { ...data, ...projectInfo }
       })
     }).then(data => {
       // 渲染模板 输出
@@ -44,7 +53,6 @@ function main() {
         return data
       })
     }).then((data) => {
-      // console.log(data)
       return data
     }).then((data) => {
       // 输出引导信息
