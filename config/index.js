@@ -9,7 +9,7 @@ const CONFIG = {
   projectName: 'react-cli',
   authorID: 'li-shuaishuai', // github ID
   templateName: 'react-template', // 模板名称
-  branch: 'feature/handlebars', // 下载模板的分支
+  branch: 'master', // 下载模板的分支
   npmReg: 'https://registry.npmjs.org/'
 }
 
