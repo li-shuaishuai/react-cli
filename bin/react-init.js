@@ -43,30 +43,34 @@ function main() {
           ...res
         }
       })
-    }).then(projectInfo => {
-      // 下载模板
-      return download(projectInfo.name).then(data => {
-        return { ...data, ...projectInfo }
-      })
-    }).then(data => {
-      // 渲染模板 输出
-      return generator(data).then(data => {
-        return data
-      })
-    }).then((data) => {
-      // 安装依赖
-      return installDeps(data.projectRoot).then(() => {
-        return data
-      })
-    }).then((data) => {
-      return data
-    }).then((data) => {
-      // 输出引导信息
-      welcome(data.projectRoot)
+    }).then(res => {
+      console.log(res)
     })
-    .catch(err => {
-      console.log(err)
-    })
+
+    // .then(projectInfo => {
+    //   // 下载模板
+    //   return download(projectInfo.name).then(data => {
+    //     return { ...data, ...projectInfo }
+    //   })
+    // }).then(data => {
+    //   // 渲染模板 输出
+    //   return generator(data).then(data => {
+    //     return data
+    //   })
+    // }).then((data) => {
+    //   // 安装依赖
+    //   return installDeps(data.projectRoot).then(() => {
+    //     return data
+    //   })
+    // }).then((data) => {
+    //   return data
+    // }).then((data) => {
+    //   // 输出引导信息
+    //   welcome(data.projectRoot)
+    // })
+    // .catch(err => {
+    //   console.log(err)
+    // })
 }
 
 
