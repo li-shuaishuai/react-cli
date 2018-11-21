@@ -1,17 +1,13 @@
 {
-  "name": "@icepoint/react-cli",
-  "version": "0.1.0",
+  "name": "@ice-point/react-cli",
+  "version": "0.1.0-beta",
   "description": "Command line interface for rapid React.js development",
-  "main": "index.js",
   "bin": {
     "react": "bin/react.js"
   },
   "directories": {
     "doc": "docs",
     "lib": "lib"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
