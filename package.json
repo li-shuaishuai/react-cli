@@ -15,7 +15,8 @@
   },
   "keywords": [
     "react",
-    "cli"
+    "cli",
+    "react-cli"
   ],
   "engines": {
     "node": ">=8.9"
