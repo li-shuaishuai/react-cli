@@ -15,18 +15,20 @@
   },
   "keywords": [
     "react",
-    "cli",
-    "react-cli"
+    "cli"
   ],
   "engines": {
     "node": ">=8.9"
   },
   "author": "lishuaishuai",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/li-shuaishuai/react-cli/issues"
   },
   "homepage": "https://github.com/li-shuaishuai/react-cli#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.18.0",
