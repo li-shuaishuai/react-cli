@@ -32,7 +32,7 @@ Detailed changes for each release are documented in the [release notes](https://
 
 ## Stay In Touch
 
-+ [Blog](www.lishuaishuai.com)
++ [Blog](https://www.lishuaishuai.com)
 
 ## License
 
