@@ -6,15 +6,11 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+const program = require('commander')
 const renderLogo = require('../lib/logo')
 const package = require('../package.json')
-const checkNodeVersion = require('../lib/checkNodeVersion')
-const { CONFIG } = require('../config')
 
 renderLogo()
-checkNodeVersion(package.engines.node, CONFIG.projectName)
-
-const program = require('commander')
 
 program.version(package.version)
   .description(package.description)
