@@ -30,20 +30,20 @@ $ npm start
 
 ```bash
 .
-├── build                   #webpack配置
-├── config                  #公共配置
-├── src                     #开发目录
-│   ├── actions             #redux/action
-│   ├── assets              #静态资源，会被webpack编译
-│   ├── common              #公共样式、通用工具
-│   ├── components          #UI组件/木偶组件
-│   ├── reducers            #redux/reducer
-│   ├── store               #redux/store
-│   ├── views               #容器组件/智能组件
-│   ├── App.jsx             #根组件
-│   ├── index.js            #入口文件
-│   └── index.tpl.html      #html模板文件
-├── static                  #静态资源，不会被webpack编译
+├── build                   # webpack配置
+├── config                  # 公共配置
+├── src                     # 开发目录
+│   ├── actions             # redux/action
+│   ├── assets              # 静态资源，会被webpack编译
+│   ├── common              # 公共样式、通用工具
+│   ├── components          # UI组件/木偶组件
+│   ├── reducers            # redux/reducer
+│   ├── store               # redux/store
+│   ├── views               # 容器组件/智能组件
+│   ├── App.jsx             # 根组件
+│   ├── index.js            # 入口文件
+│   └── index.tpl.html      # html模板文件
+├── static                  # 静态资源，不会被webpack编译
 ├── .babelrc
 ├── .gitignore
 ├── package.json

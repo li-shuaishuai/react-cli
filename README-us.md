@@ -30,20 +30,20 @@ Structure:
 
 ```bash
 .
-├── build                   #Webpack configuration
-├── config                  #Public configuration
-├── src                     #Development directory
-│   ├── actions             #redux/action
-│   ├── assets              #Static resources, will be compiled by webpack
-│   ├── common              #Public style, common tools
-│   ├── components          #UI Components / Dumb Components
-│   ├── reducers            #redux/reducer
-│   ├── store               #redux/store
-│   ├── views               #Container Components / Smart Components
-│   ├── App.jsx             #Root component
-│   ├── index.js            #Entry file
-│   └── index.tpl.html      #Html template file
-├── static                  #Static resources, not compiled by webpack
+├── build                   # Webpack configuration
+├── config                  # Public configuration
+├── src                     # Development directory
+│   ├── actions             # redux/action
+│   ├── assets              # Static resources, will be compiled by webpack
+│   ├── common              # Public style, common tools
+│   ├── components          # UI Components / Dumb Components
+│   ├── reducers            # redux/reducer
+│   ├── store               # redux/store
+│   ├── views               # Container Components / Smart Components
+│   ├── App.jsx             # Root component
+│   ├── index.js            # Entry file
+│   └── index.tpl.html      # Html template file
+├── static                  # Static resources, not compiled by webpack
 ├── .babelrc
 ├── .gitignore
 ├── package.json
