@@ -1,6 +1,4 @@
-<div align="center">
-  [中文](https://github.com/li-shuaishuai/react-cli/tree/develop/README.md) | [English](./README-us.md)
-</div>
+[中文](./README.md) | [English](./README-us.md)
 
 ---
 
