@@ -25,7 +25,7 @@ if (!projectName) {
   return
 }
 
-checkPackageVersion(package.packageName, () => {
+checkPackageVersion(package.name, () => {
   main()
 })
 
