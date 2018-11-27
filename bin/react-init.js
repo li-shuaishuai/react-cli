@@ -7,15 +7,11 @@
  */
 
 const program = require('commander')
-const checkNodeVersion = require('../lib/checkNodeVersion')
 const checkPackageVersion = require('../lib/checkPackageVersion')
 const generateProjectName = require('../lib/generateProjectName')
 const download = require('../lib/download')
 const package = require('../package.json')
-const { CONFIG } = require('../config')
 
-
-checkNodeVersion(package.engines.node, CONFIG.projectName)
 
 program.usage('<project-name>').parse(process.argv)
 

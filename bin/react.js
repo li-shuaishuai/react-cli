@@ -8,9 +8,12 @@
 
 const program = require('commander')
 const renderLogo = require('../lib/logo')
+const checkNodeVersion = require('../lib/checkNodeVersion')
 const package = require('../package.json')
+const { CONFIG } = require('../config')
 
 renderLogo()
+checkNodeVersion(package.engines.node, CONFIG.projectName)
 
 program.version(package.version)
   .description(package.description)
