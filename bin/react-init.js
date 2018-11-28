@@ -36,10 +36,7 @@ function main() {
     .then(data => {
       // 询问集成库
       return ask().then(res => {
-        return {
-          ...data,
-          ...res
-        }
+        return { ...data, ...res }
       })
     }).then(projectInfo => {
       // 下载模板

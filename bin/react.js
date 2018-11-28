@@ -20,4 +20,13 @@ program.version(package.version)
   .usage('<command> [project-name]')
   .command('init', 'create new project')
 
+
+program.command('create', 'generate a component')
+  .option('-d, --dumb', 'dumb components')
+  .option('-s, --smart', 'smart components')
+  .action((cmd, options) => {
+    console.log(cmd)
+    console.log(options)
+  })
+
 program.parse(process.argv)
