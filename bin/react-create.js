@@ -11,19 +11,26 @@ const program = require('commander')
 program
   .usage('<component-name> [options]')
   .description('generate a component')
-  .option('-d, --dumb [name]', 'dumb components')
-  .option('-s, --smart [name]', 'smart components')
-  // .action((cmd, options) => {
-  //   console.log(options.dumb)
-  //   console.log(options.smart)
-  // })
+  .option('-d, --dumb', 'dumb components')
+  .option('-s, --smart', 'smart components')
   .parse(process.argv)
 
 let componentName = program.args[0]
+const { smart, dumb } = program
 
-if (!componentName) {
+if (!componentName || !(smart || dumb)) {
   program.help()
   return
 }
 
-console.log(program.smart)
+const checkComponentName = require('../lib/checkComponentName')
+
+
+const a = checkComponentName(componentName, smart ? 'smart' : 'dumb')
+
+console.log(1, a)
+// 1. 检验小驼峰 大驼峰 特殊字符
+// 2. 模板文件
+// 3. 输出路径
+// 4. 渲染模板
+// 5. 输出成功/错误提示
