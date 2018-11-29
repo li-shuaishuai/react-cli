@@ -19,14 +19,14 @@ program.version(package.version)
   .description(package.description)
   .usage('<command> [project-name]')
   .command('init', 'create new project')
+  .command('create', 'generate a component')
 
-
-program.command('create', 'generate a component')
-  .option('-d, --dumb', 'dumb components')
-  .option('-s, --smart', 'smart components')
-  .action((cmd, options) => {
-    console.log(cmd)
-    console.log(options)
-  })
+program.on('--help', () => {
+  console.log('')
+  console.log('Examples:')
+  console.log('  $ react init demo')
+  console.log('  $ react create Button -d')
+  console.log('  $ react create home -s')
+})
 
 program.parse(process.argv)
