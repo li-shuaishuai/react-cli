@@ -10,7 +10,7 @@ const program = require('commander')
 const checkPackageVersion = require('../lib/checkPackageVersion')
 const generateProjectName = require('../lib/generateProjectName')
 const download = require('../lib/download')
-const package = require('../package.json')
+const packageName = require('../package.json').name
 
 
 program.usage('<project-name>').parse(process.argv)
@@ -21,7 +21,7 @@ if (!projectName) {
   return
 }
 
-checkPackageVersion(package.name, () => {
+checkPackageVersion(packageName, () => {
   main()
 })
 
