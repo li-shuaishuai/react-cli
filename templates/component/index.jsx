@@ -1,6 +1,6 @@
 import React from 'react'
 
-import * as styles from './{{componentName}}.scss'
+import * as styles from './{{componentName}}.{{loader}}'
 
 export default class {{componentName}} extends React.Component {
   render() {
