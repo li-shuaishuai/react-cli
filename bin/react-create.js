@@ -18,17 +18,22 @@ program
 let componentName = program.args[0]
 const { smart, dumb } = program
 
-if (!componentName || !(smart || dumb)) {
+if (!componentName || !(smart || dumb) || (smart && dumb)) {
   program.help()
   return
 }
 
-const checkComponentName = require('../lib/checkComponentName')
+const { checkComponentName } = require('../lib/util')
+const generateComponent = require('../lib/generateComponent')
 
+const isHump = checkComponentName(componentName, smart ? 'S' : 'B')
 
-const a = checkComponentName(componentName, smart ? 'smart' : 'dumb')
+if (!isHump) {
+  process.exit(1)
+}
 
-console.log(1, a)
+generateComponent()
+
 // 1. 检验小驼峰 大驼峰 特殊字符
 // 2. 模板文件
 // 3. 输出路径
