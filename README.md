@@ -50,7 +50,7 @@ $ npm start
 
 ### 生成智能组件
 ```bash
-$ react create home -s
+$ react create about -s
 ```
 
 ### 生成木偶组件

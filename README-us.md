@@ -50,7 +50,7 @@ $ npm start
 
 ### generate a smart component
 ```bash
-$ react create home -s
+$ react create about -s
 ```
 
 ### generate a dumb component
