@@ -7,6 +7,7 @@
  */
 
 const program = require('commander')
+const chalk = require('chalk')
 
 program
   .usage('<component-name> [options]')
@@ -32,10 +33,12 @@ if (!isHump) {
   process.exit(1)
 }
 
-generateComponent()
-
-// 1. 检验小驼峰 大驼峰 特殊字符
-// 2. 模板文件
-// 3. 输出路径
-// 4. 渲染模板
-// 5. 输出成功/错误提示
+generateComponent(componentName, smart ? 'smart' : 'dumb')
+  .then(res => {
+    res && res.forEach((item) => {
+      console.log(chalk.cyan('🎉 create: ') + item)
+    })
+  })
+  .catch(err => {
+    console.log(chalk.red(err))
+  })
