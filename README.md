@@ -27,15 +27,35 @@ $ npm install -g @ice-point/react-cli
 ## 使用
 
 ```bash
+# 创建一个项目
 $ react init <project-name>
+# 生成一个智能组件
+$ react create <component-name> --smart
+# 或
+$ react create <component-name> -s
+# 生成一个木偶组件
+$ react create <component-name> --dumb
+# 或
+$ react create <component-name> -d
 ```
 
 例子:
 
+### 创建项目
 ```bash
 $ react init my-project
 $ cd my-project
 $ npm start
+```
+
+### 生成智能组件
+```bash
+$ react create home -s
+```
+
+### 生成木偶组件
+```bash
+$ react create Button -d
 ```
 
 项目结构:

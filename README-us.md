@@ -27,15 +27,35 @@ $ npm install -g @ice-point/react-cli
 ## Usage
 
 ```bash
+# create new project
 $ react init <project-name>
+# generate a smart component
+$ react create <component-name> --smart
+# or
+$ react create <component-name> -s
+# generate a dumb component
+$ react create <component-name> --dumb
+# or
+$ react create <component-name> -d
 ```
 
 Example:
 
+### create new project
 ```bash
 $ react init my-project
 $ cd my-project
 $ npm start
+```
+
+### generate a smart component
+```bash
+$ react create home -s
+```
+
+### generate a dumb component
+```bash
+$ react create Button -d
 ```
 
 Structure:
