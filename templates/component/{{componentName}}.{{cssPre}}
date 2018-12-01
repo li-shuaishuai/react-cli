@@ -10,5 +10,5 @@
 {{/with}}
 {{#with styl}}
 .container
-
+  color: #DC143C
 {{/with}}
