@@ -1,3 +1,14 @@
-.contianer {
+{{#with scss}}
+.container {
   
 }
+{{/with}}
+{{#with less}}
+.container {
+  
+}
+{{/with}}
+{{#with styl}}
+.container
+
+{{/with}}
