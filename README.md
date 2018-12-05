@@ -35,14 +35,20 @@ $ npm install -g @ice-point/react-cli
 
 ## 使用
 
+#### 创建一个项目
 ```bash
-# 创建一个项目
 $ react init <project-name>
-# 生成一个智能组件
+```
+
+#### 生成一个智能组件
+```bash
 $ react create <component-name> --smart
 # 或
 $ react create <component-name> -s
-# 生成一个木偶组件
+```
+
+#### 生成一个木偶组件
+```bash
 $ react create <component-name> --dumb
 # 或
 $ react create <component-name> -d
@@ -50,21 +56,26 @@ $ react create <component-name> -d
 
 例子:
 
-### 创建项目
+#### 创建项目
 ```bash
 $ react init my-project
 $ cd my-project
 $ npm start
 ```
+然后打开[http://localhost:3000/](http://localhost:3000/)查看您的应用。
 
-### 生成智能组件
+#### 生成智能组件
 ```bash
-$ react create about -s
+$ react create header -s
+# 或创建深层智能组件
+$ react create header/nav -s
 ```
 
-### 生成木偶组件
+#### 生成木偶组件
 ```bash
-$ react create Button -d
+$ react create Table -d
+# 或创建深层木偶组件
+$ react create Table/TableRow -d
 ```
 
 项目结构:

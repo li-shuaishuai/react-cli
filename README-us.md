@@ -35,14 +35,20 @@ $ npm install -g @ice-point/react-cli
 
 ## Usage
 
+#### create new project
 ```bash
-# create new project
 $ react init <project-name>
-# generate a smart component
+```
+
+#### generate a smart component
+```bash
 $ react create <component-name> --smart
 # or
 $ react create <component-name> -s
-# generate a dumb component
+```
+
+#### generate a dumb component
+```bash
 $ react create <component-name> --dumb
 # or
 $ react create <component-name> -d
@@ -56,15 +62,20 @@ $ react init my-project
 $ cd my-project
 $ npm start
 ```
+Then open http://localhost:3000/ to see your app.
 
 ### generate a smart component
 ```bash
-$ react create about -s
+$ react create header -s
+# Or create a deep smart component
+$ react create header/nav -s
 ```
 
 ### generate a dumb component
 ```bash
-$ react create Button -d
+$ react create Table -d
+# Or create a deep dumb component
+$ react create Table/TableRow -d
 ```
 
 Structure:
