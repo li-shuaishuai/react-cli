@@ -27,7 +27,7 @@ if (!componentName || !(smart || dumb) || (smart && dumb)) {
 const { checkComponentName } = require('../lib/util')
 const generateComponent = require('../lib/generateComponent')
 
-const isHump = checkComponentName(componentName, smart ? 'S' : 'B')
+const isHump = checkComponentName(componentName.split('/')[0], smart ? 'S' : 'B')
 
 if (!isHump) {
   process.exit(1)
