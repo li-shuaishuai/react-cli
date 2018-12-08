@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./static/logo.png" alt="react-cli"></a>
+  <img width="200" src="./static/logo.png" alt="react-cli"></a>
 </p>
 <p align="center">
   <a href="https://github.com/li-shuaishuai/react-cli/blob/master/README.md">中文</a> |
