@@ -1,6 +1,7 @@
 <p align="center">
-  <img width="200" src="./static/logo.png" alt="react-cli"></a>
+  <img width="200" src="https://raw.githubusercontent.com/li-shuaishuai/react-cli/master/static/logo.png" alt="react-cli"></a>
 </p>
+
 <p align="center">
   <a href="https://github.com/li-shuaishuai/react-cli/blob/master/README.md">中文</a> |
   <a href="https://github.com/li-shuaishuai/react-cli/blob/master/README-us.md">English</a>

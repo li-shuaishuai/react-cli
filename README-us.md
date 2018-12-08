@@ -1,14 +1,6 @@
-```
---------------------------------------------------
-    ____                 _      ____ _     ___
-   |  _ \ ___  __ _  ___| |_   / ___| |   |_ _|
-   | |_) / _ \/ _` |/ __| __| | |   | |    | |
-   |  _ <  __/ (_| | (__| |_  | |___| |___ | |
-   |_| \_\___|\__,_|\___|\__|  \____|_____|___|   
---------------------------------------------------
-              www.lishuaishuai.com
---------------------------------------------------
-```
+<p align="center">
+  <img width="200" src="https://raw.githubusercontent.com/li-shuaishuai/react-cli/master/static/logo.png" alt="react-cli"></a>
+</p>
 
 <p align="center">
   <a href="https://github.com/li-shuaishuai/react-cli/blob/master/README.md">中文</a> |
