@@ -18,7 +18,7 @@
 
 # react-cli
 
-一个简单的CLI工具，用于生成React项目脚手架
+一个CLI工具，快速创建基于Webpack的可配置React开发环境
 
 ## 安装
 
@@ -98,7 +98,7 @@ $ react create Table/TableRow -d
 
 ## 文档
 
-[Temporary document](https://www.lishuaishuai.com/notice/943.html)
+[Temporary document](https://react-cli.lishuaishuai.com/)
 
 ## 更新日志
 

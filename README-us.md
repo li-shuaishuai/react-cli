@@ -18,7 +18,7 @@
 
 # react-cli
 
-A simple CLI for scaffolding React.js projects.
+A CLI tool to quickly create a configurable React development environment based on Webpack.
 
 ## Install
 
@@ -98,7 +98,7 @@ Structure:
 
 ## Documentation
 
-[Temporary document](https://www.lishuaishuai.com/notice/943.html)
+[Temporary document](https://react-cli.lishuaishuai.com/)
 
 ## Changelog
 
