@@ -54,8 +54,6 @@ function main() {
         return data
       })
     }).then((data) => {
-      return data
-    }).then((data) => {
       // 输出引导信息
       welcome(data.projectRoot)
     })
