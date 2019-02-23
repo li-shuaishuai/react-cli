@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 /**
  * Copyright (c) 2018 IcePoint
  *
@@ -30,34 +31,23 @@ const installDeps = require('../lib/installDeps')
 const welcome = require('../lib/welcome')
 const ask = require('../lib/ask')
 
-function main() {
+async function main() {
   // 生成项目根目录
-  generateProjectName(projectName)
-    .then(data => {
-      // 询问集成库
-      return ask().then(res => {
-        return { ...data, ...res }
-      })
-    }).then(projectInfo => {
-      // 下载模板
-      return download(projectInfo.name).then(data => {
-        return { ...data, ...projectInfo }
-      })
-    }).then(data => {
-      // 渲染模板 输出
-      return generator(data).then(data => {
-        return data
-      })
-    }).then((data) => {
-      // 安装依赖
-      return installDeps(data.projectRoot).then(() => {
-        return data
-      })
-    }).then((data) => {
-      // 输出引导信息
-      welcome(data.projectRoot)
-    })
-    .catch(err => {
-      console.log(err)
-    })
+  const projectData = await generateProjectName(projectName)
+  // 询问集成库
+  const askData = await ask()
+  // 下载模板
+  const downData = await download(projectName)
+  // 渲染模板 输出
+  const {
+    projectRoot
+  } = await generator({
+    ...projectData,
+    ...askData,
+    ...downData
+  })
+  // 安装依赖
+  await installDeps(projectRoot)
+  // 输出引导信息
+  welcome(projectRoot)
 }
