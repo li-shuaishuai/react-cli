@@ -1,14 +1,14 @@
 {{#with scss}}
-.wrapper {
+.wrap {
   
 }
 {{/with}}
 {{#with less}}
-.wrapper {
+.wrap {
   
 }
 {{/with}}
 {{#with styl}}
-.wrapper
+.wrap
   color: #DC143C
 {{/with}}
