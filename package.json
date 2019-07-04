@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "name": "@ice-point/react-cli",
   "version": "0.5.0",
+=======
+  "name": "@z2o/react-cli",
+  "version": "1.0.0",
+>>>>>>> develop
   "description": "Command line interface for rapid React.js development",
   "bin": {
     "react": "bin/react.js"
@@ -15,7 +20,9 @@
   },
   "keywords": [
     "react",
-    "cli"
+    "cli",
+    "z2o",
+    "react cli"
   ],
   "engines": {
     "node": ">=8.9"

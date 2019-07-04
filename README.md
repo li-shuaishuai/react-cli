@@ -8,10 +8,10 @@
 </p>
 
 <p align="center">
-  <a href="https://npmcharts.com/compare/@ice-point/react-cli?minimal=true"><img src="https://img.shields.io/npm/dt/@ice-point/react-cli.svg" alt="Downloads"></a>
-  <a href="https://www.npmjs.com/package/@ice-point/react-cli"><img src="https://img.shields.io/npm/v/@ice-point/react-cli.svg" alt="Version"></a>
-  <a href="https://www.npmjs.com/package/@ice-point/react-cli"><img src="https://img.shields.io/node/v/@ice-point/react-cli.svg" alt="Node"></a>
-  <a href="https://www.npmjs.com/package/@ice-point/react-cli"><img src="https://img.shields.io/npm/l/@ice-point/react-cli.svg" alt="License"></a>
+  <a href="https://npmcharts.com/compare/@z2o/react-cli?minimal=true"><img src="https://img.shields.io/npm/dt/@z2o/react-cli.svg" alt="Downloads"></a>
+  <a href="https://www.npmjs.com/package/@z2o/react-cli"><img src="https://img.shields.io/npm/v/@z2o/react-cli.svg" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/@z2o/react-cli"><img src="https://img.shields.io/node/v/@z2o/react-cli.svg" alt="Node"></a>
+  <a href="https://www.npmjs.com/package/@z2o/react-cli"><img src="https://img.shields.io/npm/l/@z2o/react-cli.svg" alt="License"></a>
 </p>
 
 ---
@@ -23,7 +23,7 @@
 ## 安装
 
 ```bash
-$ npm install -g @ice-point/react-cli
+$ npm install -g @z2o/react-cli
 ```
 
 ## 使用
@@ -55,7 +55,6 @@ $ react init my-project
 $ cd my-project
 $ npm start
 ```
-然后打开[http://localhost:3000/](http://localhost:3000/)查看您的应用。
 
 #### 生成智能组件
 ```bash
@@ -98,15 +97,11 @@ $ react create Table/TableRow -d
 
 ## 文档
 
-[Temporary document](https://react-cli.lishuaishuai.com/)
+[官网](https://react-cli.lishuaishuai.com/)
 
 ## 更新日志
 
 [发行说明](https://github.com/li-shuaishuai/react-cli/releases)中记录了每个版本的详细更改。
-
-## 保持联系
-
-+ [博客](https://www.lishuaishuai.com)
 
 ## License
 
